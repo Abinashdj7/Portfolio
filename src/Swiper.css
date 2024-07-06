@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.btn {
+  border-radius: 25px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 100px;
+  position: relative;
+  border: none;
+  transition: .4s ease-in;
+  background: #000052;
+  color: #00FFFF;
+  z-index: 1;
+  height: 50px;
+}
+
+.btn::before,
+.btn::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
+.btn:hover{
+  border:2px solid #00FFFF;
+  color: #00FFFF;
+  background-color: #17181c;
+}
+
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  max-width: 550px;
+  filter: contrast(90%);
+  pointer-events: none;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://i.gifer.com/YQgT.gif");
+  background-size: cover;
+  background-position: 10%;
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  /* background-image: linear-gradient(rgb(97, 87, 255),rgb(238, 73, 253)); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  z-index: 5;
+  color: transparent;
+  background-position: 0 0;
+  animation: animated-text 20s linear infinite;
+}
+
+@keyframes animated-text {
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.one,
+.five {
+  -webkit-text-stroke: 1px #fff;
+  /* background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/ba4edde6-822d-437a-88c2-f54392d7a56f); */
+  background: url(https://xmple.com/wallpaper/black-cyan-lines-stripes-white-streaks-4500x3000-c6-010101-1d4345-2c9297-46d7de-8ff1f6-e7feff-l6-25-50-100-200-400-800-a-300-f-1.svg);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.two,
+.three,
+.four,
+.six {
+  -webkit-text-stroke: 1px #fff;
+  /* background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/ba4edde6-822d-437a-88c2-f54392d7a56f); */
+  background: url(https://xmple.com/wallpaper/black-cyan-lines-stripes-white-streaks-4500x3000-c6-010101-1d4345-2c9297-46d7de-8ff1f6-e7feff-l6-25-50-100-200-400-800-a-300-f-1.svg);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
