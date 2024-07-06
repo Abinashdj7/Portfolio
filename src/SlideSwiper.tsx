@@ -5,8 +5,6 @@ import "./Swiper.css"; // Make sure you have necessary CSS styles
 import { AboutMe } from "./AboutMe";
 import { SkillCard } from "./SkillCard";
 import { ProjectCard } from "./ProjectCard";
-import Social_media_app from "./assets/Social_media_app.png";
-import Tech from "./assets/Tech.png";
 
 export const SlideSwiper = () => {
     const swiperRef = useRef<Swiper | null>(null);
@@ -83,9 +81,9 @@ export const SlideSwiper = () => {
                                     description="This website will enable you to chat with your friends
                                 ,post photos and see your friend's posts. Made with MERN stack,
                                 this website will give a good experience with a cute looking
-                                interface. Even technoligies like ChakraUI,jwt,Cloudinary." image={Social_media_app}
+                                interface. Even technoligies like ChakraUI,jwt,Cloudinary." image={"https://res.cloudinary.com/dtzsg85jd/image/upload/v1720260978/Social_media_app_lxd0t4.png"}
                                 />
-                                <ProjectCard title="E-commerce site" image={Tech} link="https://github.com/Abinashdj7/e-commerce"
+                                <ProjectCard title="E-commerce site" image={"https://res.cloudinary.com/dtzsg85jd/image/upload/v1720260984/Tech_igcxuh.png"} link="https://github.com/Abinashdj7/e-commerce"
                                     description="This is project made for educational purposes.
                                 The technologies used are React, TailwindCSS, Springboot and MySQL.
                                  Other technologies are ReduxJs,jwt." />
