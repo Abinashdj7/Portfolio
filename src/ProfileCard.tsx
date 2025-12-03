@@ -31,7 +31,7 @@ export const ProfileCard = () => {
             </div>
 
             <div style={styles.display} className="ml-10 mb-20">
-                <h3 style={{ textAlign: "left" }}>Your Profile Description:</h3>
+                <h3 style={{ textAlign: "left" }}>Profile:</h3>
 
                 <p>
                     Passionate about leveraging technology to create meaningful
