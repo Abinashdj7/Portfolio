@@ -1,14 +1,17 @@
 import "./ProfileCardMobile.css";
+import { useLanguage } from "./LanguageContext";
 
 export const ProfileCardMobile = () => {
+    const { t } = useLanguage();
+
     return (
         <div className="profile-mobile-container">
             <div className="profile-mobile-card">
-                <h2 className="profile-mobile-name">Abinash</h2>
+                <h2 className="profile-mobile-name">{t('profile.name')}</h2>
                 <p className="profile-mobile-description">
-                    Student in EPITA, Paris, France
+                    {t('profile.title')}
                 </p>
-                <p className="profile-mobile-email">Email: abi11122005@gmail.com</p>
+                <p className="profile-mobile-email">{t('profile.email')} {t('profile.emailAddress')}</p>
 
                 <ul className="profile-mobile-social">
                     <li>
@@ -17,23 +20,17 @@ export const ProfileCardMobile = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="#">Twitter</a>
-                    </li>
-                    <li>
-                        <a href="#">Instagram</a>
+                        <a href="https://github.com/Abinashdj7">
+                            GitHub
+                        </a>
                     </li>
                 </ul>
             </div>
 
             <div className="profile-mobile-description-box">
-                <h3>Your Profile Description:</h3>
+                <h3>Profile:</h3>
                 <p>
-                    Passionate about leveraging technology to create meaningful change,
-                    I am an ambitious web developer dedicated to crafting innovative
-                    solutions that make a tangible impact. With a keen eye for detail and
-                    a knack for problem-solving, I thrive in dynamic environments where
-                    I can collaborate with like-minded individuals to push the boundaries
-                    of what's possible.
+                    {t('profile.description')}
                 </p>
             </div>
         </div>

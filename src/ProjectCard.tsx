@@ -10,7 +10,7 @@ interface Props {
 export const ProjectCard = ({ image, title, link, description }: Props) => {
     return (
         <a href={link} className="card-link">
-            <div className="card" style={{marginTop:150}}>
+            <div className="card">
                 <div className="image-box">
                     <img src={image} alt={title} />
                 </div>

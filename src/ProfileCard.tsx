@@ -1,19 +1,22 @@
 import "./ProfileCard.css";
+import { useLanguage } from "./LanguageContext";
 
 export const ProfileCard = () => {
+    const { t } = useLanguage();
+
     return (
         <div className="body flex flex-row">
             <div className="profile-card">
                 <div className="profile-content">
-                    <h2 className="profile-name">Abinash</h2>
+                    <h2 className="profile-name">{t('profile.name')}</h2>
 
                     <p className="profile-description">
-                        Student in EPITA, Paris , France
+                        {t('profile.title')}
                     </p>
 
                     <br />
-                    Email:<br />
-                    abi11122005@gmail.com
+                    <p style={{ margin: 0 }}>{t('profile.email')}</p>
+                    <p className="profile-email">{t('profile.emailAddress')}</p>
 
                     <div style={{ textAlign: "left" }}>
                         <ul className="social-icons">
@@ -25,6 +28,14 @@ export const ProfileCard = () => {
                                     <i className="fab fa-linkedin">LinkedIn</i>
                                 </a>
                             </li>
+                            <li>
+                                <a
+                                    href="https://github.com/Abinashdj7"
+                                    className="underline"
+                                >
+                                    <i className="fab fa-github">GitHub</i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -34,12 +45,7 @@ export const ProfileCard = () => {
                 <h3 style={{ textAlign: "left" }}>Profile:</h3>
 
                 <p>
-                    Passionate about leveraging technology to create meaningful
-                    change,<br />
-                    I am an ambitious web developer dedicated to crafting innovative
-                    solutions<br />
-                    that make a tangible impact. With a keen eye for detail and a
-                    knack for<br />
+                    {t('profile.description')}
                     problem-solving, I thrive in dynamic environments where I can
                     collaborate<br />
                     with like-minded individuals to push the boundaries of what's
