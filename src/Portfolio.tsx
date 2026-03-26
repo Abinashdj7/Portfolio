@@ -17,7 +17,7 @@ export const Portfolio = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    const frontEndSkills = ["Html", "Css", "Javascript", "TailwindCSS", "React"];
+    const frontEndSkills = ["Html", "Css", "Javascript", "TailwindCSS", "React", "Angular"];
     const backEndLanguages = ["Java", "Php", "Python", "Javascript"];
     const databases = ["SQL", "MongoDB"];
     const backendTools = ["NodeJs", "Servlet", "JSP"];
