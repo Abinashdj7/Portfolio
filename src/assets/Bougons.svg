@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000052"/>
+      <stop offset="100%" stop-color="#0a3d4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" fill="url(#bg2)"/>
+  <g stroke="#00ffff" stroke-opacity="0.08" stroke-width="1">
+    <line x1="0" y1="70" x2="400" y2="70"/>
+    <line x1="0" y1="140" x2="400" y2="140"/>
+    <line x1="100" y1="0" x2="100" y2="280"/>
+    <line x1="200" y1="0" x2="200" y2="280"/>
+    <line x1="300" y1="0" x2="300" y2="280"/>
+  </g>
+  <text x="200" y="55" font-family="Poppins, Arial, sans-serif" font-size="38" font-weight="700" fill="#00ffff" text-anchor="middle" letter-spacing="3">BOUGONS</text>
+  <path d="M308 95 a26 26 0 1 1 -0.1 0 Z M308 110 a 11 11 0 1 0 0.1 0" fill="none" stroke="#00ffff" stroke-width="3"/>
+  <path d="M292 112 L308 152 L324 112" fill="none" stroke="#00ffff" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="0" y="190" width="400" height="50" fill="#0a0a15"/>
+  <line x1="0" y1="215" x2="400" y2="215" stroke="#00ffff" stroke-width="3" stroke-dasharray="22 16" stroke-opacity="0.6"/>
+  <g fill="none" stroke="#00ffff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M95 190 L118 158 L222 158 L248 190 Z"/>
+    <rect x="75" y="190" width="190" height="26" rx="6"/>
+    <circle cx="112" cy="216" r="13"/>
+    <circle cx="228" cy="216" r="13"/>
+  </g>
+  <text x="200" y="262" font-family="Poppins, Arial, sans-serif" font-size="13" font-weight="400" fill="#e0e0e0" text-anchor="middle" letter-spacing="3">REAL-TIME RIDE-HAILING</text>
+</svg>

@@ -5,6 +5,10 @@ import { ProfileCardMobile } from "./ProfileCardMobile";
 import { SkillCard } from "./SkillCard";
 import { ProjectCard } from "./ProjectCard";
 import { useState, useEffect } from "react";
+import einkaufenImg from "./assets/Tech.png";
+import socialMediaImg from "./assets/Social_media_app.png";
+import secureBankImg from "./assets/SecureBank.svg";
+import bougonsImg from "./assets/Bougons.svg";
 
 export const Portfolio = () => {
     const { t, language, toggleLanguage } = useLanguage();
@@ -17,12 +21,12 @@ export const Portfolio = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    const frontEndSkills = ["Html", "Css", "Javascript", "TailwindCSS", "React", "Angular"];
-    const backEndLanguages = ["Java", "Php", "Python", "Javascript"];
-    const databases = ["SQL", "MongoDB"];
-    const backendTools = ["NodeJs", "Servlet", "JSP"];
-    const backendFrameworks = ["SpringBoot", "Flask"];
-    const miscellaneous = ["Jwt", "ReduxJs", "ChakraUI", "Mui", "ExpressJs"];
+    const frontEndSkills = ["React", "Angular", "Next.js", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS", "Chakra UI"];
+    const backEndLanguages = ["Java", "Node.js", "Spring Boot", "Express", "Python"];
+    const databases = ["MySQL", "MongoDB", "PostgreSQL", "Redis"];
+    const testingTools = ["JUnit 5", "Mockito", "Cypress", "Jest", "H2", "Postman"];
+    const devopsCloud = ["Docker", "Kubernetes", "AWS", "Linux", "GitHub Actions", "CI/CD"];
+    const architecture = ["Microservices", "REST API", "JWT", "Socket.io", "Hibernate/JPA", "SOLID"];
 
     return (
         <div className="portfolio-container">
@@ -82,15 +86,9 @@ export const Portfolio = () => {
                         <SkillCard skills={frontEndSkills} type={t("skills.frontend")} />
                         <SkillCard skills={backEndLanguages} type={t("skills.backend")} />
                         <SkillCard skills={databases} type={t("skills.databases")} />
-                        <SkillCard skills={backendTools} type={t("skills.backendTools")} />
-                        <SkillCard
-                            skills={backendFrameworks}
-                            type={t("skills.backendFrameworks")}
-                        />
-                        <SkillCard
-                            skills={miscellaneous}
-                            type={t("skills.miscellaneous")}
-                        />
+                        <SkillCard skills={testingTools} type={t("skills.testing")} />
+                        <SkillCard skills={devopsCloud} type={t("skills.devops")} />
+                        <SkillCard skills={architecture} type={t("skills.architecture")} />
                     </div>
                 </div>
             </section>
@@ -102,16 +100,28 @@ export const Portfolio = () => {
 
                     <div className="projects-grid">
                         <ProjectCard
+                            title={t("projects.einkaufen.title")}
+                            link="https://github.com/Abinashdj7/Einkaufen"
+                            description={t("projects.einkaufen.description")}
+                            image={einkaufenImg}
+                        />
+                        <ProjectCard
+                            title={t("projects.securebank.title")}
+                            link="https://github.com/Abinashdj7/SecuSpir"
+                            description={t("projects.securebank.description")}
+                            image={secureBankImg}
+                        />
+                        <ProjectCard
                             title={t("projects.socialMedia.title")}
                             link="https://github.com/Abinashdj7/chat-app"
                             description={t("projects.socialMedia.description")}
-                            image="https://res.cloudinary.com/dtzsg85jd/image/upload/v1720260978/Social_media_app_lxd0t4.png"
+                            image={socialMediaImg}
                         />
                         <ProjectCard
-                            title={t("projects.ecommerce.title")}
-                            image="https://res.cloudinary.com/dtzsg85jd/image/upload/v1720260984/Tech_igcxuh.png"
-                            link="https://github.com/Abinashdj7/e-commerce"
-                            description={t("projects.ecommerce.description")}
+                            title={t("projects.bougons.title")}
+                            link="https://github.com/Abinashdj7/bougons"
+                            description={t("projects.bougons.description")}
+                            image={bougonsImg}
                         />
                     </div>
                 </div>

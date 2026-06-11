@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#000052"/>
+      <stop offset="100%" stop-color="#003a4d"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" fill="url(#bg)"/>
+  <g stroke="#00ffff" stroke-opacity="0.08" stroke-width="1">
+    <line x1="0" y1="70" x2="400" y2="70"/>
+    <line x1="0" y1="140" x2="400" y2="140"/>
+    <line x1="0" y1="210" x2="400" y2="210"/>
+    <line x1="100" y1="0" x2="100" y2="280"/>
+    <line x1="200" y1="0" x2="200" y2="280"/>
+    <line x1="300" y1="0" x2="300" y2="280"/>
+  </g>
+  <path d="M200 45 L245 62 V112 C245 150 225 175 200 185 C175 175 155 150 155 112 V62 Z" fill="none" stroke="#00ffff" stroke-width="3"/>
+  <path d="M183 113 l13 13 l24 -30" fill="none" stroke="#00ffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="225" font-family="Poppins, Arial, sans-serif" font-size="32" font-weight="700" fill="#00ffff" text-anchor="middle" letter-spacing="2">SECUREBANK</text>
+  <text x="200" y="252" font-family="Poppins, Arial, sans-serif" font-size="13" font-weight="400" fill="#e0e0e0" text-anchor="middle" letter-spacing="3">SPRING SECURITY · JWT</text>
+</svg>
