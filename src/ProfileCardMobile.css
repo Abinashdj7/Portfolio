@@ -2,79 +2,131 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    color: #00ffff;
-}
-
-.profile-mobile-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-    text-align: center;
-    color: #00ffff;
 }
 
 .profile-mobile-card {
-    width: 90%;
-    max-width: 320px;
-    background-color: #000052;
-    border-radius: 10px;
-    padding: 15px;
-    margin-bottom: 15px;
+    width: 100%;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     text-align: center;
-    color: #00ffff;
+    background: linear-gradient(135deg, rgba(0, 0, 82, 0.55), rgba(0, 30, 50, 0.55));
+    border: 1px solid rgba(0, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 28px 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 255, 255, 0.06);
+}
+
+.profile-mobile-picture {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--primary-cyan);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+    margin-bottom: 4px;
+}
+
+.profile-mobile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .profile-mobile-name {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-    color: #00ffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-cyan);
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.25);
 }
 
-.profile-mobile-description,
+.profile-mobile-title {
+    font-size: 0.95rem;
+    color: var(--accent-cyan);
+}
+
 .profile-mobile-email {
-    font-size: 1rem;
-    line-height: 1.3rem;
-    margin-bottom: 5px;
-    color: #00ffff;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    text-decoration: none;
+    word-break: break-all;
+    transition: color 0.3s ease;
+}
+
+.profile-mobile-email svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.profile-mobile-email:hover {
+    color: var(--primary-cyan);
 }
 
 .profile-mobile-social {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 14px;
+    margin-top: 6px;
     list-style: none;
     padding: 0;
 }
 
-.profile-mobile-social li a {
-    color: #00ffff;
-    text-decoration: underline;
-    font-size: 0.9rem;
+.profile-mobile-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-cyan);
+    color: var(--primary-cyan);
+    transition: all 0.3s ease;
+}
+
+.profile-mobile-social svg {
+    width: 17px;
+    height: 17px;
+}
+
+.profile-mobile-social a:hover {
+    background: var(--primary-cyan);
+    color: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3);
 }
 
 .profile-mobile-description-box {
-    width: 90%;
-    max-width: 320px;
-    background-color: #000052;
-    border-radius: 10px;
-    padding: 15px;
+    width: 100%;
+    max-width: 360px;
+    background: linear-gradient(135deg, rgba(0, 0, 82, 0.55), rgba(0, 30, 50, 0.55));
+    border: 1px solid rgba(0, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 24px 22px;
     text-align: left;
-    color: #00ffff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 255, 255, 0.06);
 }
 
 .profile-mobile-description-box h3 {
-    margin-bottom: 8px;
-    font-size: 1.2rem;
-    color: #00ffff;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--primary-cyan);
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
 }
 
 .profile-mobile-description-box p {
     font-size: 0.95rem;
-    line-height: 1.4rem;
-    color: #00ffff;
+    line-height: 1.8;
+    color: var(--text-light);
 }

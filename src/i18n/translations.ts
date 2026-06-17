@@ -15,6 +15,7 @@ export const translations = {
             title: 'Étudiant à EPITA, Paris, France',
             email: 'Email:',
             emailAddress: 'abinash.sasikumar@proton.me',
+            bioTitle: 'Bio',
             description: 'Passionné par l\'utilisation de la technologie pour créer un changement significatif, je suis un développeur web ambitieux dédié à la création de solutions innovantes qui ont un impact tangible. Avec un œil attentif aux détails et un talent pour la résolution de problèmes, j\'excelle dans les environnements dynamiques où je peux collaborer avec des personnes partageant les mêmes idées pour repousser les limites de ce qui est possible.',
         },
         skills: {
@@ -60,6 +61,7 @@ export const translations = {
             title: 'Student in EPITA, Paris, France',
             email: 'Email:',
             emailAddress: 'abinash.sasikumar@proton.me',
+            bioTitle: 'Bio',
             description: 'Passionate about leveraging technology to create meaningful change, I am an ambitious web developer dedicated to crafting innovative solutions that make a tangible impact. With a keen eye for detail and a knack for problem-solving, I thrive in dynamic environments where I can collaborate with like-minded individuals to push the boundaries of what\'s possible.',
         },
         skills: {
