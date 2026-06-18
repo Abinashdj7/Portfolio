@@ -1,6 +1,5 @@
 import "./ProfileCardMobile.css";
 import { useLanguage } from "./LanguageContext";
-import profilePicture from "./assets/image.jpeg";
 import { LinkedInIcon, GitHubIcon, MailIcon } from "./Icons";
 
 export const ProfileCardMobile = () => {
@@ -9,10 +8,6 @@ export const ProfileCardMobile = () => {
     return (
         <div className="profile-mobile-container">
             <div className="profile-mobile-card">
-                <div className="profile-mobile-picture">
-                    <img src={profilePicture} alt={t('profile.name')} />
-                </div>
-
                 <h2 className="profile-mobile-name">{t('profile.name')}</h2>
                 <p className="profile-mobile-title">{t('profile.title')}</p>
 

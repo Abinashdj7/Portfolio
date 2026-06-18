@@ -1,6 +1,5 @@
 import "./ProfileCard.css";
 import { useLanguage } from "./LanguageContext";
-import profilePicture from "./assets/image.jpeg";
 import { LinkedInIcon, GitHubIcon, MailIcon } from "./Icons";
 
 export const ProfileCard = () => {
@@ -9,10 +8,6 @@ export const ProfileCard = () => {
     return (
         <div className="about-card">
             <div className="about-card-main">
-                <div className="profile-picture">
-                    <img src={profilePicture} alt={t('profile.name')} />
-                </div>
-
                 <h2 className="about-name">{t('profile.name')}</h2>
                 <p className="about-title">{t('profile.title')}</p>
 
