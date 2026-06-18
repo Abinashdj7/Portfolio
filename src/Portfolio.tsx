@@ -7,8 +7,8 @@ import { ProjectCard } from "./ProjectCard";
 import { useState, useEffect } from "react";
 import einkaufenImg from "./assets/Tech.png";
 import socialMediaImg from "./assets/Social_media_app.png";
-import secureBankImg from "./assets/SecureBank.svg";
-import bougonsImg from "./assets/Bougons.svg";
+import secureBankImg from "./assets/SECURE BANK.png";
+import bougonsImg from "./assets/Bougons.png";
 
 export const Portfolio = () => {
     const { t, language, toggleLanguage } = useLanguage();
@@ -49,7 +49,6 @@ export const Portfolio = () => {
                 <div className="hero-content">
                     <h1 className="hero-title">{t("profile.name")}</h1>
                     <p className="hero-subtitle">{t("profile.title")}</p>
-                    <p className="hero-description">{t("profile.description")}</p>
 
                     <div className="hero-cta">
                         <a href="#projects" className="cta-button">
